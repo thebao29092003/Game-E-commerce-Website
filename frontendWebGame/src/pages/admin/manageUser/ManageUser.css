@@ -1,0 +1,35 @@
+.list-game-items-title.manage-user{
+               grid-template-columns: 1.4fr 1.5fr 1fr 1fr 0.5fr;
+              
+}
+
+.list-game-items-title.manage-user .game-name{
+               color: rgb(19, 19, 19);
+}
+
+button.manage-user{
+        font-size: 18px;       
+        color: var(--main-color);
+        cursor: pointer;
+}
+
+button.manage-user.game-name:hover{
+               text-decoration: underline;
+               color: var(--main-color);
+}
+
+.manage-user .total,
+.manage-user .status{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+}
+
+.manage-user .total:hover,
+.manage-user .status:hover{
+        transform: scale(1.05,1.05);
+}
+
+.manage-user img{
+        width: 25px;
+}

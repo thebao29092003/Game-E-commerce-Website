@@ -1,0 +1,88 @@
+import React, { useEffect } from "react";
+import SideBarAdmin from "../../sidebarAdmin/SideBarAdmin";
+import ChartWrapper from "../../chart/LineChart";
+import { useGetOrderRevenueQuery } from "../../../../features/orderApi/orderApiSlice";
+import { useState } from "react";
+import { formatDateMonth } from "../../../../utility/format/FormatDate";
+
+const OrderPerMonth = () => {
+const { isLoading, data:orderRevenue } = useGetOrderRevenueQuery();
+const [chartData, setChartData] = useState({ labels: [], datasets: [] });
+
+
+useEffect(() => {
+  if (!isLoading && orderRevenue) {
+    const months = orderRevenue.orderCountRevenue?.map((item) => formatDateMonth(item[0]));
+    const orderCounts = orderRevenue.orderCountRevenue?.map((item) => item[1]);
+    setChartData({
+      labels: months || [],
+      datasets: [
+        {
+          label: "Đơn hàng (đơn)",
+          data: orderCounts,
+          borderColor: "rgb(87, 192, 75)",
+          backgroundColor: "rgb(87, 192, 75)",
+          pointBackgroundColor: "rgb(234, 0, 255)", // màu chấm điểm
+          tension: 0.2, // độ cong của đường (0 là thẳng, càng lớn càng cong)
+          pointRadius: 4, // độ to nhỏ chấm
+          pointHoverRadius: 7, // khi hover vào thì to ra
+        },
+      ],
+    });
+  }
+}, [isLoading, orderRevenue]);
+ 
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+        labels: {
+          font: {
+            size: 14,
+          },
+        },
+      },
+      title: {
+        display: true,
+        text: "Biểu đồ đơn hàng trong 12 tháng gần nhất",
+        color: "rgb(87, 192, 75)",
+        font: {
+          size: 18, // 🔥 Kích thước chữ
+          weight: "bold", // 💪 Font weight (normal, bold, bolder, etc.)
+        },
+      },
+    },
+    scales: {
+      x: {
+        grid: {
+          color: "rgb(87, 192, 75, 0.5)",
+        },
+      },
+      y: {
+        ticks: {
+          callback: function (value) {
+            return value.toLocaleString("vi-VN"); // format tiền Việt
+          },
+          stepSize: 5,
+        },
+        grid: {
+          color: "rgb(87, 192, 75, 0.5)",
+        },
+      },
+    },
+  };
+  return (
+    <>
+      <div className="list-game-page">
+        <SideBarAdmin />
+        <div className="list-game-content">
+          <ChartWrapper data={chartData} options={options} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default OrderPerMonth;

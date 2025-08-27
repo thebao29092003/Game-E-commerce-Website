@@ -1,0 +1,47 @@
+.account-game{
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+               position: relative;
+}
+
+.account-game label{
+               font-size: 18px;
+               color: var(--main-color);
+}
+
+.account-game input{
+               padding: 10px 15px;
+               font-size: 18px;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.15);
+               background-color: rgba(178, 245, 245, 0.333);
+}
+
+.account-game img {
+               position: absolute;
+               width: 25px;
+               height: 25px;
+               right: 1%;
+               top: 55%;
+               cursor: pointer;
+}
+
+.account-game img:hover{
+               transform: scale(1.1, 1.1);
+}
+
+.btn-add-account{
+               margin: 24px 0;
+               background: none;
+               color: var(--main-color);
+               padding: 12px 24px;
+               border: 1px solid var(--main-color);
+               cursor: pointer;
+               font-weight: bold;
+               font-size: 18px;
+}
+
+.btn-add-account:hover{
+               background-color: var(--main-color);
+               color: aliceblue;
+}

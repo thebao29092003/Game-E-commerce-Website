@@ -1,0 +1,185 @@
+.cart-content {
+               padding: 1.5% 4%;
+               padding-left: 6%;
+               /* border: 1px solid #036f8d; */
+               margin-bottom: 100px;
+               display: flex;
+               gap: 100px;
+               flex-wrap: wrap;
+}
+
+
+.cart-items {
+               flex: 2;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.5);
+               border-radius: 15px;
+               background: linear-gradient(45deg, rgba(197, 242, 248, 0.1), rgba(181, 237, 243, 0.1));
+               padding: 15px 20px;
+               max-height: 70vh;
+               overflow-y: scroll;
+}
+
+.cart-items::-webkit-scrollbar{
+               display: none;
+}
+
+.cart-items-title {
+               display: grid;
+               grid-template-columns: 1fr 2fr 1fr 0.4fr;
+               align-items: center;
+               color:var(--main-color);
+               font-size: 18px;
+}
+
+.cart-items-title .game-name {
+               max-height: 50px;
+               display: -webkit-box;
+               -webkit-line-clamp: 2;
+               -webkit-box-orient: vertical;
+               overflow: hidden;
+               margin-right: 40px;
+
+}
+
+.cart-items-item {
+               margin: 10px 0;
+               color: black;
+}
+
+.cart-items-item img {
+               height: 80px;
+               object-fit: contain;
+}
+
+.cart-items-item .cross {
+               cursor: pointer;
+               border: 1px solid var(--main-color);
+               text-align: center;
+               padding: 5px 0;
+               border-radius: 8px;
+               color: var(--main-color);
+               font-weight: 600;
+               transition: 0.3s ease-in-out;
+}
+
+
+.cart-items-item .cross:hover {
+               color: white;
+               background-color: var(--main-color);
+}
+
+.cart-bottom {
+               display: flex;
+               justify-content: space-between;
+               gap: max(12vw, 20px);
+               font-size: 18px;
+               flex: 1;
+               padding: 20px 15px;
+               border-radius: 10px;
+               background: linear-gradient(45deg, rgba(197, 242, 248, 0.1), rgba(181, 237, 243, 0.1));;
+               box-shadow:0 0px 5px 0 rgba(0, 31, 45, 0.24),0 0px 5px 0 rgba(0, 57, 53, 0.046);
+}
+
+.cart-total {
+               display: flex;
+               flex: 1;
+               flex-direction: column;
+               gap: 30px;
+
+}
+
+.cart-total h3 {
+               color: var(--main-color);
+}
+
+.cart-total-details {
+               display: flex;
+               justify-content: space-between;
+               color: #555;
+}
+
+.cart-total-details b{
+               color: var(--main-color);
+}
+
+.cart-total hr {
+               margin: 10px 0;
+}
+
+.cart-total button {
+               color: var(--main-color);
+               border: 1px solid var(--main-color);
+               width: max(14vw, 150px);
+               padding: 12px 0;
+               border-radius: 4px;
+               cursor: pointer;
+               transition: 0.3s ease-in-out;
+               background: none;
+               font-size: 15px;
+               font-weight: 500;
+}
+
+.cart-total button:hover {
+               color: aliceblue;
+               background-color: var(--main-color);
+}
+
+.cart-promocode {
+               flex: 1;
+}
+
+.cart-promocode p {
+               color: #555;
+}
+
+.cart-promocode-input {
+               margin-top: 10px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background-color: #eaeaea;
+               border-radius: 4px;
+}
+
+.cart-promocode-input input {
+               background: transparent;
+               padding-left: 10px;
+}
+
+.cart-promocode-input button {
+               width: max(10vw, 150px);
+               padding: 12px 5px;
+               background-color: tomato;
+               color: white;
+               border-radius: 4px;
+               cursor: pointer;
+               transition: 0.3s ease-in-out;
+}
+
+.cart-promocode-input button:hover {
+               background-color: rgb(252, 48, 12);
+}
+
+@media (max-width: 900px) {
+
+               .cart-items-title {
+                              display: grid;
+                              grid-template-columns: 0.8fr 1.5fr 1fr 1fr 1fr 0.5fr;
+                              gap: 10px;
+               }
+}
+
+@media (max-width: 750px) {
+
+               .cart-bottom {
+                              flex-direction: column-reverse;
+               }
+}
+
+@media (max-width: 560px) {
+               .cart-items-title {
+                              display: grid;
+                              grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+                              gap: 20px;
+               }
+}

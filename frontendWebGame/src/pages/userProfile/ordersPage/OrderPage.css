@@ -1,0 +1,91 @@
+.order-page{
+               display: flex;
+               height: 80vh;
+               margin-top: -20px;
+}
+
+.order-content {
+               /* padding: 1.5% 4%;
+               padding-left: 6%; */
+               padding: 20px 30px;
+               padding-bottom: 10px;
+               gap: 20px;
+               /* border: 1px solid #036f8d; */
+               /* margin-bottom: 100px; */
+               display: flex;
+               flex-direction: column;
+               width: 100%;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.2);
+               /* border-radius: 15px; */
+               background: linear-gradient(45deg, rgba(197, 242, 248, 0.1), rgba(181, 237, 243, 0.1));
+               
+}
+
+.no-order {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100%;
+               font-size: 25px;
+               font-weight: 500;
+               color: var(--main-color);
+}
+
+.order-content .container{
+               padding: 10px;
+               margin: 0;
+               border-radius: none;
+}
+
+.order-content .container a{
+               height: 42px;
+               width: 45px;
+               font-size: 16px;
+               cursor: pointer;
+}
+
+.order-items {
+              
+               /* max-height: 70vh; */
+               overflow-y: scroll;
+}
+
+.order-items hr{
+               margin: 20px 0;
+}
+
+.order-items::-webkit-scrollbar{
+               display: none;
+}
+
+.order-items-title {
+               display: grid;
+               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+               align-items: center;
+               color:var(--main-color);
+               font-size: 18px;
+}
+
+.order-items-title .game-name {
+               max-height: 50px;
+               display: -webkit-box;
+               -webkit-line-clamp: 2;
+               -webkit-box-orient: vertical;
+               overflow: hidden;
+               margin-right: 40px;
+
+}
+
+.order-items-item {
+               margin: 10px 0;
+               color: #001d20;
+}
+
+.order-items-item img {
+               width: 100px;
+}
+
+
+.order-items-item .cross:hover {
+               color: white;
+}

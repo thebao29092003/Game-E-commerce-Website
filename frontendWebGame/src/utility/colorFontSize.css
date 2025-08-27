@@ -1,0 +1,38 @@
+/* chỉ cần viết 1 file riêng như này import trong file App.jsx hoặc bất kì file 
+nào 1 lần thì ở đâu cũng sử dụng đc nên tốt nhất import cấp cao nhất*/
+:root {
+               --heading1: 50px;
+               --heading2: 34px;
+               --heading3: 28px;
+               --heading4: 24px;
+               --text: 18px;
+
+               /* mobile */
+
+               --heading1-mobile: 40px;
+               --heading2-mobile: 30px;
+               --heading3-mobile: 18px;
+               --text-mobile: 16px;
+
+               /* tablet */
+               --heading1-tablet: 42px;
+               --heading2-tablet: 28px;
+               --heading3-tablet: 23px;
+}
+
+.dark-mode {
+               --main-color: rgb(0, 174, 215);
+               --text-color: rgb(1, 96, 109);
+
+               --banner-color: rgb(217, 235, 254);
+               --color-text-a: #232323;
+}
+
+.light-mode {
+               --main-color: rgb(0, 174, 215);
+               --text-color: rgb(1, 96, 109);
+
+               --banner-color: rgb(217, 235, 254);
+               --color-text-a: #232323;
+               
+}

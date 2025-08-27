@@ -1,0 +1,24 @@
+.error-page{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               height: 100vh;
+               background: linear-gradient(-45deg, rgba(68, 202, 232, 0.1), rgba(239, 202, 92, 0.1));
+               color: var(--main-color);
+               font-size: 20px;
+}
+
+.error-page img{
+               width: 250px;
+               object-fit: contain;
+}
+
+.error-page h1{
+               margin: 10px 0 20px 0;
+               font-size: 60px;
+}
+
+.error-page h3{
+               margin-bottom: 5px;
+}

@@ -1,0 +1,13 @@
+/* Tuỳ chỉnh thêm: ẩn luôn nếu muốn */
+.ps-submenu-content.ps-open.css-18unl23::-webkit-scrollbar{
+               display: none !important;
+}
+.css-honxw6,
+.css-jn69v9
+{
+           
+               border-right: 3px solid currentcolor !important;
+               border-bottom: 3px solid currentcolor !important;
+               width: 15px !important;
+               height: 15px !important;
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+/* Thuộc tính overflow-x: hidden giải quyết lỗi khoảng trắng ở màn 
+hình 21:9 vì nó ngăn không cho nội dung vượt ra ngoài 
+chiều ngang của viewport */
+body {
+  /* position: relative; */
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--main-color);
+  background: linear-gradient(-45deg, rgba(68, 202, 232, 0.1), rgba(239, 202, 92, 0.1));
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+a{
+  text-decoration: none;
+}
+
+.app{
+  position: relative;
+}
+
+hr{
+  width: 100%;
+  height: 0.5px;
+  background-color: rgb(131, 203, 248);
+}
+

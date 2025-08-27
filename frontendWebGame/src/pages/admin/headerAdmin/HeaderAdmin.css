@@ -1,0 +1,12 @@
+.logo-email{
+               display: flex;
+               align-items: center;
+               color: var(--main-color);
+               font-size: 18px;
+               flex-direction: row-reverse;
+               gap: 10px;
+}
+
+.logo-email img{
+               width: 40px;
+}

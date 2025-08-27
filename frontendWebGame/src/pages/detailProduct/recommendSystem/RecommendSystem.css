@@ -1,0 +1,9 @@
+.header-recommend-system {
+text-align: center;
+}
+
+.category-menu-list a.product-item-recommend {
+               min-width: 250px;
+               height: 270px;
+}
+

@@ -1,0 +1,91 @@
+.account-page{
+               display: flex;
+               height: 85vh;
+               margin-top: -20px;
+             color: var(--main-color);
+             font-weight: 400;
+             font-size: 16px;
+}
+
+.account-page-content{
+               flex: 1;
+               padding: 30px 40px;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.2);
+               /* border-radius: 15px; */
+               background: linear-gradient(45deg, rgba(197, 242, 248, 0.1), rgba(181, 237, 243, 0.1));
+                overflow-y: scroll;
+              }
+
+
+.user-name-email label{
+               margin-bottom: 50px; 
+}
+
+
+.account-page-content input:focus,
+.account-page-content input:focus{
+               border: 1px solid var(--main-color);
+}
+
+.account-page-content input,
+.account-page-content input {
+               width: 100%;
+               padding: 10px 15px;
+               margin-top: 10px;
+               font-size: 16px;
+               background-color: rgba(141, 219, 250, 0.155);
+               color: rgb(1, 115, 123);
+}
+
+.account-page-content input::placeholder,
+.account-page-content input::placeholder{
+               color: rgba(1, 157, 168, 0.5);
+}
+
+.account-page-content button{
+               margin-top: 24px;
+              background: none;
+               color: var(--main-color);
+               padding: 12px 24px;
+               border: 1px solid var(--main-color);
+               cursor: pointer;
+               font-weight: bold;
+               font-size: 17px;
+}
+
+.account-page-content button:hover{
+               background-color: var(--main-color);
+               color: aliceblue;
+}
+
+.account-page-content legend{
+               padding: 0 10px;
+}
+
+.account-page-content img {
+
+               top: 17px;
+               right: 2%;
+               position: absolute;
+               width: 25px;
+               height: 25px;
+               cursor: pointer;
+               border: none;
+
+
+}
+
+.account-page-content img:hover{
+               transform: scale(1.15);
+               transition: all 0.3s ease-in-out;
+}
+
+
+.account-page-content button:disabled:hover {
+	background: inherit;
+	/* hoặc màu mặc định của button */
+	cursor: not-allowed;
+	/* nếu muốn vẫn thể hiện trạng thái không thể click */
+	box-shadow: none;
+	color:rgb(0, 174, 215);
+}

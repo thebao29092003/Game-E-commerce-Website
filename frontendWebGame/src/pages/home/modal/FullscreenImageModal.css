@@ -1,0 +1,48 @@
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen-image {
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-button.left {
+  left: -80px;
+}
+
+.nav-button.right {
+  right: -80px;
+}
+
+.nav-button.left img,
+.nav-button.right img
+{
+  width: 40px;
+  height: 40px;
+}

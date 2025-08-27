@@ -1,0 +1,34 @@
+.list-game-items-title.manage-order{
+               grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+              
+}
+
+.list-game-items-title.manage-order .game-name{
+               color: rgb(19, 19, 19);
+}
+
+button.manage-order{
+        font-size: 18px;       
+        color: var(--main-color);
+        cursor: pointer;
+}
+
+button.manage-order:hover{
+               text-decoration: underline;
+}
+
+.manage-order .total,
+.manage-order .status{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+}
+
+.manage-order .total:hover,
+.manage-order .status:hover{
+        transform: scale(1.05,1.05);
+}
+
+.manage-order img{
+        width: 25px;
+}

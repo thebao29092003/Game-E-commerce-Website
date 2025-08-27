@@ -1,0 +1,86 @@
+
+.search-info-game{
+               width: 100%;
+               padding: 2%;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.15);
+}
+
+.search-info-game fieldset{
+               display: flex;
+               gap: 100px;
+               font-size: 18px;
+               height: 72vh;
+}
+
+.name-price-des{
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+               gap: 25px;
+}
+
+.item-info{
+               display: flex;
+               gap: 12px;
+               flex-direction: column;
+}
+
+.item-info label{
+               font-weight: 500;
+              margin-right: 10px;
+}
+
+.item-info input,
+.item-info textarea
+{
+               font-size: 18px;
+               padding: 10px 15px;
+               width: 100%;
+}
+
+.img-game-admin {
+             display: flex;
+             flex-direction: column;
+             gap: 20px;  
+             flex: 1;
+             align-items: center;
+}
+
+.img-game-admin label{
+               font-weight: 500;
+}
+
+.img-game-admin .img {
+               padding-top: 2px;
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+               /* overflow: scroll; */
+              
+}
+
+.img-game-admin .img::-webkit-scrollbar{
+               display: none;
+}
+
+.img-game-admin .img img{
+               max-width: 100%;
+               max-height: 400px;
+               object-fit: cover;
+}
+
+.name-price-des button{
+               margin-top: 24px;
+               background: none;
+               color: var(--main-color);
+               padding: 12px 24px;
+               border: 1px solid var(--main-color);
+               cursor: pointer;
+               font-weight: bold;
+               font-size: 17px;
+}
+
+.name-price-des button:hover{
+               background-color: var(--main-color);
+               color: aliceblue;
+}

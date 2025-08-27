@@ -1,0 +1,43 @@
+.banner {
+               /*border: 1px solid var(--main-color);*/
+               width: 90%;
+               height: 45vh;
+               position: relative;
+               display: flex;
+               justify-content: center;
+               margin: 0 5%;
+               gap: 2.2%;
+               background: linear-gradient(-180deg, rgb(217, 235, 254), rgba(205, 238, 242, 0.2));
+               border-radius: 15px;
+               overflow: hidden;
+               box-shadow: 2px 2px 0 rgba(1, 55, 64, 0.4);
+}
+
+.banner img {
+               width: 62%;
+               object-fit: cover;
+}
+
+@keyframes fadeIn {
+               0% {
+                              opacity: 0;
+               }
+}
+
+.banner-contents {
+               flex: 2;
+               animation: fadeIn 3s;
+               margin-left: 4%;
+               margin-top: 2%;
+}
+
+.banner-contents h2 {
+               margin-bottom: 3%;
+               font-size: 27px;
+               color: var(--main-color);
+}
+
+.banner-contents p {
+               line-height: 1.8;
+               color: rgb(5, 54, 61);
+}

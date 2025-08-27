@@ -1,0 +1,14 @@
+/* Custom styles cho Sweetalert2 buttons */
+.custom-confirm-button {
+  color: #ffffff !important; /* Màu chữ cho nút confirm */
+  background-color: #00afd2 !important; /* Màu nền nút confirm */
+}
+
+.custom-cancel-button {
+  color: #ffffff !important; /* Màu chữ cho nút cancel */
+  background-color: rgb(66, 63, 63) !important; /* Màu nền nút cancel */
+}
+
+.custom-actions {
+  gap: 50px !important; /* Khoảng cách giữa các buttons */
+}

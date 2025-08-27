@@ -1,0 +1,53 @@
+.list-account {
+               grid-template-columns: 0.6fr 0.5fr 0.5fr 0.5fr 0.3fr;
+}
+
+.list-account div{
+               display: flex;
+               gap: 10px;
+               align-items: center;
+}
+.list-account div img{
+               width: 20px;
+               height: 20px;
+               cursor: pointer;
+}
+
+.list-account div img:hover{
+               transform: scale(1.1, 1.1);
+}
+
+.header-btn{
+               text-align: center;
+               color: var(--main-color);
+               margin-bottom: 40px;
+               padding: 20px 20px;
+               box-shadow: inset 0px 0px 5px rgb(1, 76, 89, 0.5);
+               background: linear-gradient(45deg, rgba(197, 242, 248, 0.1), rgba(181, 237, 243, 0.1));
+}
+
+.header-btn img{
+               height: 250px;
+               object-fit: contain;
+}
+
+.header-btn h2{
+               margin-bottom: 20px;
+}
+
+.header-btn button{
+               background: none;
+               color: var(--main-color);
+               font-size: 18px;
+               border: 1px solid var(--main-color);
+               padding: 10px 20px;
+               border-radius: 10px;
+               cursor: pointer;
+               
+}
+
+.header-btn button:hover{
+               background-color: var(--main-color);
+               color: aliceblue;
+               font-weight: 500;
+}
